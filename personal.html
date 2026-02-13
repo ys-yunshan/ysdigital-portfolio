@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YunShan - Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">YunShan</a>
+
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">About Me</a>
+                <a href="projects.html" class="navbar-link">Projects</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+                <a href="resume.html" class="navbar-link">Resume</a>
+                <a href="personal.html" class="navbar-link active">Personal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="personal-page section">
+            <div class="container">
+                <h2 class="section-title">Personal Life</h2>
+
+                <div class="personal-grid">
+                    <div class="personal-item">
+                        <h3>Interests & Hobbies</h3>
+                        <div class="hobbies-list">
+                            <div class="hobby-item">
+                                <h4>Competitive Badminton</h4>
+                                <p>A former school athlete who enjoys the strategy and fast-paced nature of the game;
+                                    this sport has instilled in me a deep sense of discipline and teamwork.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Global Exploration</h4>
+                                <p>I enjoy traveling to experience different cultures and urban environments—from the
+                                    historic streets of London and Paris to the vibrant energy of Korea.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Strategic Gaming</h4>
+                                <p>I am a fan of immersive games that challenge my logical thinking and tactical
+                                    decision-making skills.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Literary & Visual Storytelling</h4>
+                                <p>I enjoy exploring diverse narratives through reading comics and literature, which
+                                    helps spark my creativity for UI/UX design.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Music & Focus</h4>
+                                <p>I am an avid listener of music, which I find essential for maintaining focus and
+                                    finding rhythm during deep work or coding sessions.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>K-Pop Dance & Performance</h4>
+                                <p>I am passionate about learning and practicing intricate dance choreographies; this
+                                    hobby requires a high level of discipline, physical coordination, and the ability to
+                                    master new sequences quickly.</p>
+                            </div>
+                        </div>
+                        <!-- Placeholder for image -->
+                        <div class="personal-img-placeholder">
+                            <img src="hobbies.jpg" alt="Hobby Picture">
+                        </div>
+                    </div>
+
+                    <div class="personal-item">
+                        <h3>Co-Curricular Activities (CCAs)</h3>
+                        <div class="cca-list">
+                            <h4>Tertiary CCA: K-Wave Club
+                                (Nanyang Polytechnic)</h4>
+                            <div class="hobby-item">
+                                <h4>Creative Discipline</h4>
+                                <p>Actively mastered intricate K-Pop dance choreography, requiring high focus and
+                                    physical coordination to perform as a unified team.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Community Building</h4>
+                                <p>Participated in monthly gaming sessions to foster social bonding and inclusive
+                                    community engagement within the school.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Cultural Engagement</h4>
+                                <p>Explored global digital trends and the K-Pop phenomenon, reflecting an interest in
+                                    how modern media connects diverse audiences.</p>
+                            </div>
+
+                            <h4>Secondary CCA: Badminton
+                                Team (Ang Mo Kio Secondary)</h4>
+                            <div class="hobby-item">
+                                <h4>National Representation</h4>
+                                <p>Represented the school in the competitive National School Games for both 'C' and 'B'
+                                    Divisions.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Resilience & Stamina</h4>
+                                <p>Developed the mental and physical endurance required to thrive in high-pressure
+                                    sporting environments.</p>
+                            </div>
+                            <div class="hobby-item">
+                                <h4>Team Synergy</h4>
+                                <p>Gained foundational experience in collaborative performance and strategic
+                                    communication within a team setting.</p>
+                            </div>
+                        </div>
+                        <!-- Placeholder for image -->
+                        <div class="personal-img-placeholder">
+                            <img src="cca.jpg" alt="CCA Picture">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-socials">
+                <a href="mailto:yunshanknya2008@gmail.com" aria-label="Email">Email</a>
+                <a href="https://www.linkedin.com/in/yun-shan-knya-b879a43aa/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/ys-yunshan" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">GitHub</a>
+                <a href="https://www.instagram.com/ys_yunshan/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">Instagram</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

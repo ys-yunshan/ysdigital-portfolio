@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YunShan - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">YunShan</a>
+
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">About Me</a>
+                <a href="projects.html" class="navbar-link active">Projects</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+                <a href="resume.html" class="navbar-link">Resume</a>
+                <a href="personal.html" class="navbar-link">Personal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="projects-page section">
+            <div class="container">
+                <h2 class="section-title">Featured Project</h2>
+
+                <div class="project-detail">
+                    <div class="project-header">
+                        <h3>GenLinkSG (Web Development)</h3>
+                        <p class="project-subtitle">Bridging Generations Through the "Memory Map"</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Leaflet.js</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="project-showcase">
+                        <img src="memorymap_img2.png" alt="Project Screenshot" class="project-image">
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-description">
+                            <h4>Overview</h4>
+                            <p>
+                                GenLinkSG is a community archive where youth and seniors connect through shared history.
+                                The Memory Map allows users to pin stories to specific locations, preserving "vanishing"
+                                landmarks through interactive storytelling and a built-in comment system.
+                            </p>
+                            <br>
+
+                            <h4>My Role: Lead Full-Stack Developer</h4>
+                            <p>I engineered the end-to-end "Memory Map" feature, focusing on real-time data flow and
+                                intergenerational accessibility:</p>
+                            <ul class="role-list">
+                                <li><strong>Backend:</strong> Built a Python (Flask) and SQLite system to manage
+                                    relational data for users, pins, and comments.</li>
+                                <li><strong>Frontend:</strong> Integrated Leaflet.js for a responsive, coordinate-based
+                                    map interface.</li>
+                                <li><strong>API Design:</strong> Developed RESTful APIs (HTTP/JSON) to fetch and post
+                                    data dynamically, ensuring a seamless user experience without page reloads.</li>
+                            </ul>
+                            <br>
+
+                            <h4>Challenges & Solutions</h4>
+                            <ul class="impact-list">
+                                <li><strong>Performance:</strong> Refactored the API to load only pins within the user's
+                                    current map viewport, significantly reducing latency for high-density areas.</li>
+                                <li><strong>UX Design:</strong> Simplified the pinning process to a "Three-Click" flow
+                                    with high-contrast UI elements to ensure accessibility for senior users.</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-sidebar">
+                            <div class="sidebar-item">
+                                <h4>Role</h4>
+                                <p>Lead Full-Stack Developer</p>
+                            </div>
+                            <div class="sidebar-item">
+                                <h4>Duration</h4>
+                                <p>Nov 2025 - Feb 2026</p>
+                            </div>
+                            <div class="sidebar-item">
+                                <h4>Links</h4>
+
+                                <!-- Button to show video -->
+                                <button id="showVideoBtn" class="btn btn-outline">View Live Demo</button>
+
+                                <!-- Video container (hidden by default) -->
+                                <div id="videoContainer" style="display: none; margin-top: 10px;">
+                                    <video width="100%" controls id="demoVideo">
+                                        <source src="videos/memorymap_demo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <button id="closeVideoBtn" class="btn btn-outline"
+                                        style="margin-top: 1rem; font-size: 0.9rem;">Close Demo</button>
+                                </div>
+
+                                <!-- Source Code Button -->
+                                <a href="https://dev.genlink.albloh2.dev/memorymap/" target="_blank"
+                                    class="btn btn-outline">View Webpage</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-socials">
+                <a href="mailto:yunshanknya2008@gmail.com" aria-label="Email">Email</a>
+                <a href="https://www.linkedin.com/in/yun-shan-knya-b879a43aa/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/ys-yunshan" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">GitHub</a>
+                <a href="https://www.instagram.com/ys_yunshan/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">Instagram</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

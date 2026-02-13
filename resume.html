@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YunShan - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">YunShan</a>
+
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">About Me</a>
+                <a href="projects.html" class="navbar-link">Projects</a>
+                <a href="contact.html" class="navbar-link">Contact</a>
+                <a href="resume.html" class="navbar-link active">Resume</a>
+                <a href="personal.html" class="navbar-link">Personal</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="resume-page section">
+            <div class="container">
+                <h2 class="section-title">My Resume</h2>
+
+                <div class="resume-container">
+                    <div class="resume-actions">
+                        <p>View my digital resume below or download the PDF version.</p>
+                        <a href="YunShan_Resume.pdf" download="YunShan_Resume.pdf" class="btn">Download Resume (PDF)</a>
+                    </div>
+
+                    <div class="resume-preview">
+                        <header class="resume-header">
+                            <h1>Knya Yun Shan</h1>
+                            <p class="resume-title">Aspiring AI Solutions Architect | Data Analytics Specialist</p>
+                            <div class="resume-contact">
+                                <span>yunshanknya2008@gmail.com</span>
+                            </div>
+                        </header>
+
+                        <div class="resume-body">
+                            <section class="resume-section">
+                                <h3>Education</h3>
+                                <div class="resume-item">
+                                    <h4>Diploma in Applied AI & Analytics</h4>
+                                    <p class="institution">Nanyang Polytechnic, 2024–2028</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>GCE O-Levels</h4>
+                                    <p class="institution">Ang Mo Kio Secondary, 2021–2024</p>
+                                </div>
+                            </section>
+
+                            <section class="resume-section">
+                                <h3>Work Experience</h3>
+                                <div class="resume-item">
+                                    <h4>Retail Assistant</h4>
+                                    <p class="institution">Mandai Wildlife</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>Sales Assistant</h4>
+                                    <p class="institution">Skechers</p>
+                                </div>
+                                <div class="resume-item">
+                                    <h4>Service Crew</h4>
+                                    <p class="institution">AONE F&B</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-socials">
+                <a href="mailto:yunshanknya2008@gmail.com" aria-label="Email">Email</a>
+                <a href="https://www.linkedin.com/in/yun-shan-knya-b879a43aa/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/ys-yunshan" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">GitHub</a>
+                <a href="https://www.instagram.com/ys_yunshan/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">Instagram</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
